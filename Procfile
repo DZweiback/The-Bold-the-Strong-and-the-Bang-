@@ -1,1 +1,1 @@
-web: gunicorn pet_pals.app:app
+worker: python WeatherBot_Solved.py
