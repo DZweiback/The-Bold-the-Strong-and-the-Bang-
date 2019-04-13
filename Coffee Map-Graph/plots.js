@@ -1,8 +1,8 @@
 
 // Create the Traces
 var trace1 = {
-  x: data.year,
-  y: data.Caffeine_Level,
+  x: data.Coffee_Type,
+  y: data.Price,
   mode: "markers",
   type: "scatter",
   name: "caffeine",
@@ -13,8 +13,8 @@ var trace1 = {
 };
 
 var trace2 = {
-  x: data.year,
-  y: data.Price,
+  x: data.Coffee_Type,
+  y: data.Caffeine_Level,
   mode: "markers",
   type: "scatter",
   name: "Price",
@@ -24,20 +24,9 @@ var trace2 = {
   }
 };
 
-var trace3 = {
-  x: data.Year,
-  y: data,Bean_Type,
-  mode: "markers",
-  type: "scatter",
-  name: "Bean Type",
-  marker: {
-    color: "rgba(156, 165, 196, 1.0)",
-    symbol: "cross"
-  }
-};
 
 // Create the data array for the plot
-var data = [trace1, trace2, trace3];
+var data = [trace1];
 
 // Define the plot layout
 var layout = {
